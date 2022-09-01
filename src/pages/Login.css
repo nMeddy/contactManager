@@ -1,0 +1,76 @@
+.loginPage{
+  width: 100vh;
+  border-radius: 3rem;
+  transition: var(--tran-05);
+}
+.leftPart{
+  display: display;
+  align-content: center;
+  background-image: url('/src/asset/loginImg.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50vh;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+}
+.rightPart{
+  font-weight: lighter;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  background-color: rgb(28 48 74);
+}
+.Top{
+  color: aliceblue;
+}
+.leftTitle{
+  margin: 1rem;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.inputName{
+  font-size: 10px;
+}
+.input{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0.5rem;
+}
+input{
+  background: transparent;
+  border: none;
+  border-bottom: 1px gray solid !important;
+  outline: none;
+  color: aliceblue;
+  font-size: 13px;
+  transition: var(--tran-05);
+}
+textarea{
+  background: transparent;
+  border: 1px gray solid !important;
+  border-bottom-right-radius: 3rem;
+  outline: none;
+  color: aliceblue;
+  margin-top: 1rem;
+}
+.btnGroup .btn-primary{
+  font-size: 13px;
+  padding: auto 1rem;
+}
+
+/* Viewport less then or equal to 750px */
+@media only screen and (max-width:750px){
+  .leftPart{
+   display: none;
+  }
+  .rightPart{
+    border-radius: 3rem;
+    width: 50vh;
+    height: 50vh;
+    margin: 40px;
+  }
+}
+
+/* Viewport less then or equal to 750px */
